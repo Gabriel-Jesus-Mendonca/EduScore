@@ -19,6 +19,24 @@ app.get('/', (req, res) => {
     res.status(200).render('index');
 });
 
+app.get('/login', (req, res) => {
+    res.status(200).render('login');
+});
+
+app.get('/home', (req, res) => {
+    res.status(200).render('home');
+});
+
+app.get('/studentBoard', (req, res) => {
+    res.status(200).render('studentBoard');
+});
+
+app.get('/report', (req, res) => {
+    res.status(200).render('report');
+});
+
+
+
 // Listener
 app.listen(PORT, () => {
     console.log(`Server running at: http://localhost:${PORT}`)
